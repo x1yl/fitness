@@ -1,4 +1,9 @@
 [
-  { "workout": "test", "date": "2025-02-13 13:16:22" },
-  { "workout": "e", "date": "2025-02-13 13:16:53" }
+  {
+    "name": "Running",
+    "date": "2025-02-13",
+    "duration": 21,
+    "weight": null,
+    "calories": 210
+  }
 ]

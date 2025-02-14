@@ -1,2 +1,4 @@
-tk
-datetime
+DateTime==5.5
+pytz==2025.1
+tk==0.1.0
+zope.interface==7.2
