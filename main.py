@@ -13,13 +13,13 @@ class FitnessTracker:
 
         # workouts
         self.workouts = [
-            {"name": "Running", "cpm": 10},
-            {"name": "Cycling", "cpm": 8},
-            {"name": "Swimming", "cpm": 9},
-            {"name": "Bench Press", "cpm": 6},
-            {"name": "Squats", "cpm": 7},
-            {"name": "Deadlift", "cpm": 8},
-            {"name": "Yoga", "cpm": 4},
+            {"name": "Running", "met": 10},
+            {"name": "Cycling", "met": 8},
+            {"name": "Swimming", "met": 9},
+            {"name": "Bench Press", "met": 6},
+            {"name": "Squats", "met": 7},
+            {"name": "Deadlift", "met": 8},
+            {"name": "Yoga", "met": 4},
         ]
 
         # intial setup
@@ -116,11 +116,11 @@ class FitnessTracker:
         with open("fitness.json", "w") as f:
             json.dump(self.history, f)
 
-    def calculate_calories(self, base_cpm, duration, weight=None):
-        # Calculate calories burned based on cpm and duration
-        calories = base_cpm * duration
+    def calculate_calories(self, base_met, duration, weight=None):
+        # Calculate calories burned based on met and duration
+        calories = base_met * 3.5 * (duration/200)
         if weight:
-            calories += (weight * 0.5) * duration
+            calories = base_met * (weight * 0.25 ) * 3.5 * (duration/200)
         return round(calories)
 
     def log_workout(self):
@@ -146,7 +146,7 @@ class FitnessTracker:
                     selected_workout = workout
                     break
             calories = self.calculate_calories(
-                selected_workout["cpm"], duration, weight
+                selected_workout["met"], duration, weight
             )
 
             # Save workout

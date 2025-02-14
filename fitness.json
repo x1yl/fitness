@@ -1,9 +1,1 @@
-[
-  {
-    "name": "Running",
-    "date": "2025-02-13",
-    "duration": 21,
-    "weight": null,
-    "calories": 210
-  }
-]
+[{"name": "Running", "date": "2025-02-13", "duration": 21, "weight": null, "calories": 210}, {"name": "Swimming", "date": "2025-02-14", "duration": 20, "weight": null, "calories": 180}, {"name": "Bench Press", "date": "2025-02-14", "duration": 20, "weight": 50.0, "calories": 620}, {"name": "Running", "date": "2025-02-14", "duration": 20, "weight": null, "calories": 200}, {"name": "Running", "date": "2025-02-14", "duration": 4, "weight": null, "calories": 40}, {"name": "Bench Press", "date": "2025-02-14", "duration": 10, "weight": 3.0, "calories": 75}, {"name": "Bench Press", "date": "2025-02-14", "duration": 10, "weight": 3.0, "calories": 75}, {"name": "Bench Press", "date": "2025-02-14", "duration": 10, "weight": 3.0, "calories": 75}, {"name": "Bench Press", "date": "2025-02-14", "duration": 10, "weight": 3.0, "calories": 75}, {"name": "Bench Press", "date": "2025-02-14", "duration": 10, "weight": 3.0, "calories": 75}, {"name": "Running", "date": "2025-02-14", "duration": 5, "weight": null, "calories": 1}, {"name": "Running", "date": "2025-02-14", "duration": 12, "weight": 4.0, "calories": 2}]
