@@ -118,9 +118,10 @@ class FitnessTracker:
 
     def calculate_calories(self, base_met, duration, weight=None):
         # Calculate calories burned based on met and duration
-        calories = base_met * 3.5 * (duration/200)
         if weight:
             calories = base_met * (weight * 0.25 ) * 3.5 * (duration/200)
+        else:
+            calories = base_met * 3.5 * (duration/200)
         return round(calories)
 
     def log_workout(self):
